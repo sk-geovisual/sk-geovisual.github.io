@@ -357,11 +357,13 @@ footer p {
 
     #projects {
         width: auto;
+        margin: 0 100px 0 100px;
     }
 
     #projects ul li {
         width: 50%;
         float: left;
+        margin: 0 auto 20px auto;
     }
 
     #projects ul li:last-child {
@@ -369,7 +371,7 @@ footer p {
     }
 
     #projects img {
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
