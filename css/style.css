@@ -75,6 +75,8 @@ header nav ul li:hover {
 
 
 
+
+
 /*  VERTICAL NAV     *********************************************/
 
 .vertical-nav {
@@ -228,6 +230,28 @@ header nav ul li:hover {
 
 
 /*  CONTACT     *********************************************/
+
+#logos_contact {
+    width: 80px;
+    margin: 0 auto 80px auto;
+}
+
+#logos_contact ul {
+    padding: 0;
+}
+
+#logos_contact ul li {
+    width: 50%;
+    float: left;
+}
+
+#logos_contact img {
+    width: 20px;
+}
+
+#logos_contact img:hover {
+    opacity: 0.5;
+}
 
 form input, textarea {
     font-family: 'Roboto Slab', serif;
@@ -446,8 +470,12 @@ footer p {
         height: auto;
     }
 
+    h3 {
+        padding-top: 20%; 
+    }
+
     #work {
-        min-height: 300%;
+        min-height: 150%;
     }
 
     #projects {
@@ -456,11 +484,12 @@ footer p {
 
     #projects ul li {
         width: 100%;
+        margin: 0 auto 10px auto;
         float: none;
     }
 
     #projects img {
-        width: 60%;
+        width: 80%;
         height: auto;
     }
 
@@ -470,5 +499,37 @@ footer p {
 
     .button {
         width: 74%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    #home h1 {
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    #home h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    #about h4 {
+        font-size: 20px;
+    }
+
+    #about p {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    #projects {
+        margin: 0 70px 0 70px;
     }
 }
