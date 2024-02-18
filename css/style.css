@@ -232,7 +232,7 @@ header nav ul li:hover {
 /*  CONTACT     *********************************************/
 
 #logos_contact {
-    width: 80px;
+    width: 100px;
     margin: 0 auto 80px auto;
 }
 
@@ -241,7 +241,7 @@ header nav ul li:hover {
 }
 
 #logos_contact ul li {
-    width: 50%;
+    width: 33.3%;
     float: left;
 }
 
