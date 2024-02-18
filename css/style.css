@@ -10,7 +10,7 @@ h3 {font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
 h4, p {font-family: 'Roboto Slab', serif;}
 hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40px auto;}
 
-#logo, li, img, .button, .Menü {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+#logos, li, img, .button, .Menü {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 .Menü {display: none;}
 
 
@@ -39,7 +39,7 @@ header {
 }
 
 #logos ul li {
-    width: 33.3%;
+    width: 25%;
     float: left;
     margin: 0 auto 0 auto;
 }
@@ -331,7 +331,7 @@ footer p {
     }
 
     #logos {
-        max-width: 100px;
+        max-width: 130px;
         margin: 3px 0 0 40px;
     }
 
@@ -340,7 +340,7 @@ footer p {
     }
     
     #logos ul li {
-        width: 33.3%;
+        width: 25%;
         float: left;
         margin: 0 auto 0 auto;
     }
@@ -356,6 +356,7 @@ footer p {
 
     header nav ul li {
         font-size: 12px;
+        margin-left: 15px;
     }
 
     #home h1 {
@@ -413,7 +414,7 @@ footer p {
 
 @media screen and (max-width: 480px) {
     #logos {
-        width: 90px;
+        width: 130px;
         margin-left: 30px;
     }
 
