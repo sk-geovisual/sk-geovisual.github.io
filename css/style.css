@@ -112,6 +112,7 @@ header nav ul li:hover {
 
 .nav-label {
     color:#494949;
+    font-size: 15px;
     font-weight: regular;
     opacity: 0;
     transition: opacity 0.1s;
@@ -121,7 +122,7 @@ header nav ul li:hover {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     height: var(--nav-gap);
-    margin-left: var(--nav-gap);
+    margin-left: 10px;
     transition: transform 0.2s;
     width: var(--nav-gap);
     transform: scale(0.7);
@@ -209,7 +210,7 @@ header nav ul li:hover {
 
 #projects {
     background-color: #f0f0f0;
-    min-height: 180%;
+    min-height: 200%;
     margin: 0 auto 0 auto;
 }
 
@@ -429,7 +430,7 @@ footer a:hover {
     }
 
     #projects {
-        min-height: 300%;
+        min-height: 350%;
     }
 
     #gallery {
@@ -450,6 +451,10 @@ footer a:hover {
     #gallery img {
         width: 90%;
         height: auto;
+    }
+
+    #contact {
+        min-height: 80%;
     }
 
     #contact p {
@@ -554,6 +559,11 @@ footer a:hover {
         padding-top: 20%; 
     }
 
+    #about p{
+        width: 270px;
+        font-size: 15px;
+    }
+
     #projects {
         min-height: 150%;
     }
@@ -572,6 +582,25 @@ footer a:hover {
         width: 80%;
         height: auto;
     }
+
+    #contact {
+        min-height: 70%;
+    }
+
+    #contact p {
+        width: 270px;
+        font-size: 15px;
+    }
+
+    #logos_contact {
+        width: 170px;
+        margin: 50px auto 20px auto;
+    }
+
+    #logos_contact img {
+        width: 35px;
+    }
+
 
 }
 
@@ -599,15 +628,31 @@ footer a:hover {
 
     #about p {
         font-size: 15px;
-        width: 70%;
+        width: 250px;
     }
 
     #gallery {
         margin: 0 70px 0 70px;
     }
 
+    #contact {
+        min-height: 80%;
+    }
+
     #contact p {
-        font-size: 15px;
-        width: 70%;
+        width: 250px;
+    }
+
+    #logos_contact {
+        width: 150px;
+        margin: 50px auto 20px auto;
+    }
+
+    #logos_contact img {
+        width: 35px;
+    }
+
+    footer p {
+        font-size: 8px;
     }
 }
