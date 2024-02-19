@@ -5,9 +5,12 @@ html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-a
 a {text-decoration: none;}
 li {list-style-type: none;}
 body, h1, h2, h3, a {font-family: 'Roboto', sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
-h2 {color: #5d7177;}
-h3 {font-size: 40px; padding-top: 8%; margin-bottom: 5px;}
 h4, p {font-family: 'Roboto Slab', serif;}
+h1 {font-size: 120px; line-height: 150%; letter-spacing: 1.5px; word-spacing: 1.5px;}
+h2 {font-size: 40px; line-height: 150%;letter-spacing: 1px; word-spacing: 1px; color: #5d7177;}
+h3 {font-size: 40px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding-top: 8%; margin-bottom: 5px;}
+h4 {font-size: 20px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
+p {font-size: 17px; line-height: 160%; letter-spacing: 1px; word-spacing: 1px;}
 hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40px auto;}
 
 #logos, li, img, .button, .Menü {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
@@ -51,7 +54,6 @@ header {
 header img:hover {
     opacity: 0.5;
 }
-
 
 
 
@@ -137,13 +139,11 @@ header nav ul li:hover {
 }
 
 #home h1 {
-    margin: 240px auto 0 auto;
-    font-size: 110px;
+    margin: 180px auto 0 auto;
 }
 
 #home h2 {
     margin: 0 auto 0 auto;
-    font-size: 25px;
 }
 
 #home img {
@@ -183,42 +183,43 @@ header nav ul li:hover {
 }
 
 #about p {
-    width: 700px;
+    width: 80%;
     margin: 0 auto 0 auto;
 }
 
 
 
 
-/*  WORK     *********************************************/
-
-#work {
-    background-color: #f0f0f0;
-    min-height: 150%;
-}
+/*  PROJECTS     *********************************************/
 
 #projects {
+    background-color: #f0f0f0;
+    min-height: 250%;
+    margin: 0 auto 0 auto;
+}
+
+#gallery {
     width: 900px;
     margin: 0 auto 0 auto;
 }
 
-#projects ul {
+#gallery ul {
     padding: 0;
 }
 
-#projects ul li {
+#gallery ul li {
     width: 33.3%;
     float: left;
     margin-bottom: 15px;
 }
 
-#projects img {
+#gallery img {
     width: 280px;
     height: auto;
     border-radius: 5px;
 }
 
-#projects img:hover {
+#gallery img:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -231,9 +232,10 @@ header nav ul li:hover {
 
 /*  CONTACT     *********************************************/
 
+
 #logos_contact {
-    width: 100px;
-    margin: 0 auto 80px auto;
+    width: 300px;
+    margin: 50px auto 80px auto;
 }
 
 #logos_contact ul {
@@ -246,59 +248,23 @@ header nav ul li:hover {
 }
 
 #logos_contact img {
-    width: 20px;
+    width: 50px;
 }
 
 #logos_contact img:hover {
     opacity: 0.5;
 }
 
-form input, textarea {
-    font-family: 'Roboto Slab', serif;
-    font-size: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 2px solid;
-    border-color: #494949;
-    outline: none;
+#contact p {
+    width: 80%;
+    margin: 0 auto 0 auto;
 }
 
-form input:first-child {
-    margin-top: 10px;
-}
-
-form input {
-    width: 552px;
-    height: 30px;
-}
-
-form textarea {
-    width: 550px;
-    height: 200px;
-    resize: none;
-}
-
-.input_text {
-    color: #494949;
-    padding-left: 10px;
-}
 
 ::-webkit-input-placeholder {color: #999999;}
 ::-moz-placeholder {color: #999999;}
 :-ms-input-placeholder {color: #999999;}
 :-moz-placeholder {color: #999999;}
-
-.button {
-    background-color: #f0f0f0;
-    color: #494949;
-    width: 566px;
-    height: 50px;
-}
-
-.button:hover {
-    background-color: #494949;
-    color: #f0f0f0;
-}
 
 
 
@@ -332,7 +298,7 @@ footer p {
 
     #logos {
         max-width: 130px;
-        margin: 3px 0 0 40px;
+        margin: 3px 0 0 30px;
     }
 
     #logos ul {
@@ -351,7 +317,7 @@ footer p {
 
     header nav {
         float: right;
-        margin: 8px 40px 0 0;
+        margin: 8px 30px 0 0;
     }
 
     header nav ul li {
@@ -372,30 +338,26 @@ footer p {
         padding-top: 12%;
     }
 
-    #about p {
-        width: 80%;
-    }
-
-    #work {
+    #projects {
         min-height: 200%;
     }
 
-    #projects {
+    #gallery {
         width: auto;
         margin: 0 100px 0 100px;
     }
 
-    #projects ul li {
+    #gallery ul li {
         width: 50%;
         float: left;
         margin: 0 auto 20px auto;
     }
 
-    #projects ul li:last-child {
+    #gallery ul li:last-child {
         padding-bottom: 20%;
     }
 
-    #projects img {
+    #gallery img {
         width: 90%;
         height: auto;
     }
@@ -425,7 +387,7 @@ footer p {
 
     .Menü {
         display: inline-block;
-        width: 20px;
+        width: 30px;
         cursor: pointer;
         text-align: right;
         float: right;
@@ -475,21 +437,21 @@ footer p {
         padding-top: 20%; 
     }
 
-    #work {
+    #projects {
         min-height: 150%;
     }
 
-    #projects {
+    #gallery {
         width: auto;
     }
 
-    #projects ul li {
+    #gallery ul li {
         width: 100%;
         margin: 0 auto 10px auto;
         float: none;
     }
 
-    #projects img {
+    #gallery img {
         width: 80%;
         height: auto;
     }
@@ -530,7 +492,12 @@ footer p {
         width: 70%;
     }
 
-    #projects {
+    #gallery {
         margin: 0 70px 0 70px;
+    }
+
+    #contact p {
+        font-size: 15px;
+        width: 70%;
     }
 }
