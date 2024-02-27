@@ -10,11 +10,59 @@ h1 {font-size: 120px; line-height: 150%; letter-spacing: 1.5px; word-spacing: 1.
 h2 {font-size: 40px; line-height: 150%;letter-spacing: 1px; word-spacing: 1px; color: #5d7177;}
 h3 {font-size: 40px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding-top: 8%; margin-bottom: 5px;}
 h4 {font-size: 20px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
-p {font-size: 20px; line-height: 160%; letter-spacing: 1px; word-spacing: 1px;}
+p {font-size: 20px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
 hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40px auto;}
 
 #about, #logos, li, img, .Menü {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
 .Menü {display: none;}
+
+
+
+
+/*  OVERLAY *********************************************/
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .9); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#overlay-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#overlay-button {
+    font-family: 'Roboto';
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 100vmax;
+    color: #494949;
+    width: 120px;
+    height: 50px;
+    margin-top: 70vh;
+}
+
+#overlay-button:hover {
+    background-color: #494949;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
 
 
 
@@ -188,7 +236,7 @@ header nav ul li:hover {
 }
 
 #about-container_item1 {
-    width: 50%;
+    width: 40%;
     justify-content:  left;
 }
 
@@ -200,8 +248,8 @@ header nav ul li:hover {
 }
 
 #about-container img {
-    width: 80%;
-    border-radius: 2%;
+    width: 60%;
+    border-radius: 100vmax;
 }
 
 #about h4 {
@@ -508,7 +556,20 @@ footer a:hover {
 
 @media screen and (max-width: 480px) {
     
-    p {font-size: 14px;}
+    #overlay-text {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    #overlay-button {
+        font-size: 12px;
+        width: 100px;
+        height: 40px;
+    }
+
+    p {
+        font-size: 14px;
+    }
     
     #logos {
         width: 130px;
@@ -574,7 +635,7 @@ footer a:hover {
     }
 
     #projects {
-        min-height: 480%;
+        min-height: 490%;
     }
 
     #gallery ul li {
@@ -602,6 +663,7 @@ footer a:hover {
 
 
 @media screen and (max-width: 400px) {
+    
     #home h1 {
         font-size: 40px;
         margin-top: 150px;
