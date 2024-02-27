@@ -36,7 +36,8 @@ hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40p
 #overlay-text {
     font-family: 'Roboto Slab', serif;
     font-size: 25px;
-    width: 50%;
+    text-align: justify;
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -660,7 +661,7 @@ footer a:hover {
 
 
     #projects {
-        min-height: 240%;
+        min-height: 250%;
     }
 
     #gallery ul li {
