@@ -1,4 +1,4 @@
-html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-align: center;}
+html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-align: center; hyphens: auto;}
 
 .section {min-height: 100%;}
 
@@ -197,7 +197,7 @@ header nav ul li:hover {
 }
 
 #home h1 {
-    margin: 170px auto 0 auto;
+    margin: 10% auto 0 auto;
 }
 
 #home h2 {
@@ -241,14 +241,14 @@ header nav ul li:hover {
 }
 
 #about-container_item2 {
-    width: 50%;
+    width: 60%;
     justify-content: right;
-    text-align: left;
-    margin-left: 0%;
+    text-align: justify;
+    margin-left: 0;
 }
 
 #about-container img {
-    width: 60%;
+    width: 70%;
     border-radius: 100vmax;
 }
 
@@ -263,13 +263,13 @@ header nav ul li:hover {
 
 #projects {
     background-color: #f0f0f0;
-    min-height: 300%;
+    min-height: 320%;
     margin: 0 auto 0 auto;
 }
 
 #favorite {
-    width: 50%;
-    padding: 0 0 40px 0;
+    width: 40%;
+    padding: 0 0 0 0;
     margin: 0 auto 0 auto;
 }
 
@@ -279,8 +279,8 @@ header nav ul li:hover {
 }
 
 #gallery {
-    width: 50%;
-    margin: 10% auto 0 auto;
+    width: 70%;
+    margin: 8% auto 0 auto;
 }
 
 #gallery ul {
@@ -310,11 +310,20 @@ header nav ul li:hover {
 
 
 
+
 /*  CONTACT     *********************************************/
 
+#contact {
+    min-height: 80%;
+}
+
+#contact-container {
+    margin: 0 auto 0 auto;
+    width: 30%;
+}
 
 #logos_contact {
-    width: 300px;
+    width: 70%;
     margin: 50px auto 80px auto;
 }
 
@@ -328,7 +337,7 @@ header nav ul li:hover {
 }
 
 #logos_contact img {
-    width: 50px;
+    width: 40%;
     filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
 }
 
@@ -337,11 +346,9 @@ header nav ul li:hover {
     filter: none;
 }
 
-
-
 #contact p {
-    width: 50%;
-    margin: 0 auto 0 auto;
+    text-align: justify;
+    margin: 15% 0 0 0;
 }
 
 
@@ -472,9 +479,11 @@ footer a:hover {
         margin-left: 15px;
     }
 
+
+
     #home h1 {
         font-size: 65px;
-        margin-top: 150px;
+        margin-top: 40%;
     }
 
     #home h2 {
@@ -485,12 +494,14 @@ footer a:hover {
         padding-top: 12%;
     }
 
+
+
     #about-container {
         display: block;
     }
     
     #about-container_item1 {
-        width: 70%;
+        width: 90%;
         margin: 0 auto 0 auto;
     }
     
@@ -503,21 +514,27 @@ footer a:hover {
         text-align: center;
     }
 
-    #about p {
-        text-align: center;
-    }
+
 
     #projects {
-        min-height: 250%;
+        min-height: 180%;
     }
     
     #gallery ul li {
-        width: 50%;
+        width: 33.33%;
     }
     
+
+
     #contact {
         min-height: 80%;
     }
+
+    #contact-container {
+        width: 50%;
+    }
+
+
 
 
 
@@ -545,8 +562,6 @@ footer a:hover {
         margin: 20px auto 50px auto;
         text-align: left;
     }
-
-
 }
 
 
@@ -567,10 +582,14 @@ footer a:hover {
         height: 40px;
     }
 
+
+
     p {
         font-size: 14px;
     }
     
+
+
     #logos {
         width: 130px;
         margin-left: 30px;
@@ -615,9 +634,11 @@ footer a:hover {
         background-color: #eeeeee;
     }
 
+
+
     #home h1 {
         font-size: 50px;
-        margin-top: 150px;
+        margin-top: 50%;
     }
 
     #home h2 {
@@ -630,32 +651,27 @@ footer a:hover {
         padding-top: 20%;
     }
 
+
+
     h4 {
         font-size: 14px;
     }
 
+
+
     #projects {
-        min-height: 490%;
+        min-height: 220%;
     }
 
     #gallery ul li {
-        width: 100%;
+        width: 50%;
     }
+
+
 
     #contact {
         min-height: 80%;
     }
-
-    #logos_contact {
-        width: 170px;
-        margin: 50px auto 20px auto;
-    }
-
-    #logos_contact img {
-        width: 35px;
-    }
-
-
 }
 
 
@@ -666,21 +682,14 @@ footer a:hover {
     
     #home h1 {
         font-size: 40px;
-        margin-top: 150px;
+        margin-top: 50%;
     }
 
     #home h2 {
         font-size: 18px;
     }
 
-    #logos_contact {
-        width: 150px;
-        margin: 50px auto 20px auto;
-    }
-
-    #logos_contact img {
-        width: 35px;
-    }
+    
 
     footer p {
         font-size: 8px;
