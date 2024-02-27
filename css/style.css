@@ -4,13 +4,13 @@ html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-a
 
 a {text-decoration: none;}
 li {list-style-type: none;}
-body, h1, h2, h3, a {font-family: 'Roboto', sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
-h4, p {font-family: 'Roboto Slab', serif;}
+h1, h2, h3, a, span {font-family: 'Roboto', sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
+h4, p {font-family: 'Roboto Slab', serif; color: #494949}
 h1 {font-size: 120px; line-height: 150%; letter-spacing: 1.5px; word-spacing: 1.5px;}
 h2 {font-size: 40px; line-height: 150%;letter-spacing: 1px; word-spacing: 1px; color: #5d7177;}
 h3 {font-size: 40px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding-top: 8%; margin-bottom: 5px;}
 h4 {font-size: 20px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
-p {font-size: 17px; line-height: 160%; letter-spacing: 1px; word-spacing: 1px;}
+p {font-size: 20px; line-height: 160%; letter-spacing: 1px; word-spacing: 1px;}
 hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40px auto;}
 
 #about, #logos, li, img, .Menü {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
@@ -81,7 +81,7 @@ header nav ul li:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
-    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -149,7 +149,7 @@ header nav ul li:hover {
 }
 
 #home h1 {
-    margin: 180px auto 0 auto;
+    margin: 170px auto 0 auto;
 }
 
 #home h2 {
@@ -168,11 +168,11 @@ header nav ul li:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
-    filter: drop-shadow(0 6px 2px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
 }
 
 #home a .pfeil:hover {
-    padding-top: 6px;
+    padding-top: 5px;
     filter: none;
 }
 
@@ -181,26 +181,31 @@ header nav ul li:hover {
 
 /*  ABOUT     *********************************************/
 
-#about img {
-    width: 200px;
-    border-radius: 5px;
+#about-container {
+    display: flex;
+    width: 50%;
+    margin: 0 auto 0 auto;
 }
 
-#about img:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+#about-container_item1 {
+    width: 50%;
+    justify-content:  left;
+}
+
+#about-container_item2 {
+    width: 50%;
+    justify-content: right;
+    text-align: left;
+    margin-left: 0%;
+}
+
+#about-container img {
+    width: 80%;
+    border-radius: 2%;
 }
 
 #about h4 {
-    font-size: 25px;
-}
-
-#about p {
-    width: 800px;
-    margin: 0 auto 0 auto;
+    margin: 0;
 }
 
 
@@ -210,13 +215,24 @@ header nav ul li:hover {
 
 #projects {
     background-color: #f0f0f0;
-    min-height: 200%;
+    min-height: 300%;
     margin: 0 auto 0 auto;
 }
 
-#gallery {
-    width: 1000px;
+#favorite {
+    width: 50%;
+    padding: 0 0 40px 0;
     margin: 0 auto 0 auto;
+}
+
+#favorite video {
+    border-radius: 2%;
+    width: 100%;
+}
+
+#gallery {
+    width: 50%;
+    margin: 10% auto 0 auto;
 }
 
 #gallery ul {
@@ -230,9 +246,9 @@ header nav ul li:hover {
 }
 
 #gallery img {
-    width: 230px;
+    width: 90%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 2%;
 }
 
 #gallery img:hover {
@@ -265,20 +281,18 @@ header nav ul li:hover {
 
 #logos_contact img {
     width: 50px;
+    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
 }
 
 #logos_contact img:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    filter: drop-shadow(0px 6px 2px rgba(0, 0, 0, 0.3));
+    padding-top: 5px;
+    filter: none;
 }
 
 
 
 #contact p {
-    width: 800px;
+    width: 50%;
     margin: 0 auto 0 auto;
 }
 
@@ -303,6 +317,7 @@ footer p {
     font-size: 12px;
     color: #f0f0f0;
     padding-top: 30px;
+    text-transform: uppercase;
 }
 
 footer a {
@@ -374,10 +389,7 @@ footer a:hover {
 
 /*  TABLETS *********************************************/
 
-@media screen and (max-width: 1024px) {
-    
-    /* p {font-size: 14px;} */
-    
+@media screen and (max-width: 1024px) {    
     
     header {
         height: 60px;
@@ -414,51 +426,49 @@ footer a:hover {
 
     #home h1 {
         font-size: 65px;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     #home h2 {
         font-size: 22px;
     }
 
-    #about p {
-        width: 400px;
-    }
-
     h3 {
         padding-top: 12%;
     }
 
+    #about-container {
+        display: block;
+    }
+    
+    #about-container_item1 {
+        width: 70%;
+        margin: 0 auto 0 auto;
+    }
+    
+    #about-container_item2 {
+        width: 100%;
+        margin: 10% auto 0 auto;
+    }
+    
+    #about h4 {
+        text-align: center;
+    }
+
+    #about p {
+        text-align: center;
+    }
+
     #projects {
-        min-height: 350%;
+        min-height: 250%;
     }
-
-    #gallery {
-        width: auto;
-        margin: 0 100px 0 100px;
-    }
-
+    
     #gallery ul li {
         width: 50%;
-        float: left;
-        margin: 0 auto 20px auto;
     }
-
-    #gallery ul li:last-child {
-        padding-bottom: 20%;
-    }
-
-    #gallery img {
-        width: 90%;
-        height: auto;
-    }
-
+    
     #contact {
         min-height: 80%;
-    }
-
-    #contact p {
-        width: 400px;
     }
 
 
@@ -497,6 +507,9 @@ footer a:hover {
 /*  MOBILE *********************************************/
 
 @media screen and (max-width: 480px) {
+    
+    p {font-size: 14px;}
+    
     #logos {
         width: 130px;
         margin-left: 30px;
@@ -513,11 +526,7 @@ footer a:hover {
         cursor: pointer;
         text-align: right;
         float: right;
-        margin: 27px 30px 28px 0;
-    }
-
-    .Menü:hover {
-        opacity: 0.5;
+        margin: 26px 30px 28px 0;
     }
 
     header nav ul {
@@ -547,7 +556,7 @@ footer a:hover {
 
     #home h1 {
         font-size: 50px;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     #home h2 {
@@ -556,40 +565,24 @@ footer a:hover {
     }
 
     h3 {
-        padding-top: 20%; 
+        font-size: 25px;
+        padding-top: 20%;
     }
 
-    #about p{
-        width: 270px;
-        font-size: 15px;
+    h4 {
+        font-size: 14px;
     }
 
     #projects {
-        min-height: 150%;
-    }
-
-    #gallery {
-        width: auto;
+        min-height: 480%;
     }
 
     #gallery ul li {
         width: 100%;
-        margin: 0 auto 10px auto;
-        float: none;
-    }
-
-    #gallery img {
-        width: 80%;
-        height: auto;
     }
 
     #contact {
-        min-height: 70%;
-    }
-
-    #contact p {
-        width: 270px;
-        font-size: 15px;
+        min-height: 80%;
     }
 
     #logos_contact {
@@ -611,36 +604,11 @@ footer a:hover {
 @media screen and (max-width: 400px) {
     #home h1 {
         font-size: 40px;
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     #home h2 {
         font-size: 18px;
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    #about h4 {
-        font-size: 20px;
-    }
-
-    #about p {
-        font-size: 15px;
-        width: 250px;
-    }
-
-    #gallery {
-        margin: 0 70px 0 70px;
-    }
-
-    #contact {
-        min-height: 80%;
-    }
-
-    #contact p {
-        width: 250px;
     }
 
     #logos_contact {
