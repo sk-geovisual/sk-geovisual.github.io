@@ -3,11 +3,12 @@ html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-a
 .section {min-height: 100%;}
 
 a {text-decoration: none;}
+
 li {list-style-type: none;}
-h1, h2, h3, a, span {font-family: 'Roboto', sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
-h4, p {font-family: 'Roboto Slab', serif; color: #494949}
+h1, h2, h3, header a, span {font-family: 'Roboto', sans-serif; font-weight: 500; color: #494949; text-transform: uppercase;}
+h4, p, a {font-family: 'Roboto Slab', serif; color: #494949}
 h1 {font-size: 120px; line-height: 150%; letter-spacing: 1.5px; word-spacing: 1.5px;}
-h2 {font-size: 40px; line-height: 150%;letter-spacing: 1px; word-spacing: 1px; color: #5d7177;}
+h2 {font-size: 40px; line-height: 150%;letter-spacing: 1px; word-spacing: 1px; color: #007878;}
 h3 {font-size: 40px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding-top: 8%; margin-bottom: 5px;}
 h4 {font-size: 20px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
 p {font-size: 20px; line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
@@ -50,7 +51,7 @@ hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40p
     font-family: 'Roboto';
     font-size: 15px;
     background-color: white;
-    border: none;
+    border: solid #ffffff;
     border-radius: 100vmax;
     color: #494949;
     width: 120px;
@@ -61,7 +62,7 @@ hr {width: 40px; height: 3px; background: #494949; border: 0; margin: 0 auto 40p
 #overlay-button:hover {
     background-color: #494949;
     color: white;
-    transition: .5s;
+    transition: .3s;
     cursor: pointer;
 }
 
@@ -198,7 +199,7 @@ header nav ul li:hover {
 }
 
 #home h1 {
-    margin: 10% auto 0 auto;
+    margin: 8% auto 0 auto;
 }
 
 #home h2 {
@@ -230,6 +231,17 @@ header nav ul li:hover {
 
 /*  ABOUT     *********************************************/
 
+#about a {
+    color: #007878;
+}
+
+#about a:hover {opacity: 0.7;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
 #about-container {
     display: flex;
     width: 50%;
@@ -249,7 +261,7 @@ header nav ul li:hover {
 }
 
 #about-container img {
-    width: 70%;
+    max-width: 70%;
     border-radius: 100vmax;
 }
 
@@ -264,23 +276,23 @@ header nav ul li:hover {
 
 #projects {
     background-color: #f0f0f0;
-    min-height: 320%;
+    min-height: 330%;
     margin: 0 auto 0 auto;
 }
 
 #favorite {
-    width: 40%;
+    width: 60%;
     padding: 0 0 0 0;
     margin: 0 auto 0 auto;
 }
 
 #favorite video {
-    border-radius: 2%;
+    border-radius: 10px;
     width: 100%;
 }
 
 #gallery {
-    width: 70%;
+    width: 60%;
     margin: 8% auto 0 auto;
 }
 
@@ -295,9 +307,9 @@ header nav ul li:hover {
 }
 
 #gallery img {
-    width: 90%;
+    max-width: 90%;
     height: auto;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 #gallery img:hover {
@@ -323,33 +335,50 @@ header nav ul li:hover {
     width: 30%;
 }
 
-#logos_contact {
+#contact-logos {
     width: 70%;
     margin: 50px auto 80px auto;
 }
 
-#logos_contact ul {
+#contact-logos ul {
     padding: 0;
 }
 
-#logos_contact ul li {
+#contact-logos ul li {
     width: 33.3%;
     float: left;
 }
 
-#logos_contact img {
+#contact-logos img {
     width: 40%;
     filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
 }
 
-#logos_contact img:hover {
+#contact-logos img:hover {
     padding-top: 5px;
     filter: none;
 }
 
-#contact p {
+#contact-description {
     text-align: justify;
     margin: 15% 0 0 0;
+}
+
+#contact-data {
+    text-align: justify;
+    margin: 5% 0 0 0;
+}
+
+#contact-data a {
+    color: #007878;
+}
+
+#contact-data a:hover {
+    opacity: 0.7;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
 }
 
 
@@ -382,7 +411,7 @@ footer a {
 }
 
 footer a:hover {
-    opacity: 0.5;
+    opacity: 0.7;
     transition: all 300ms;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
