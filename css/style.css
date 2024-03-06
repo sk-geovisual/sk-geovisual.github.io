@@ -1,6 +1,6 @@
 html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-align: center; hyphens: auto; box-sizing: border-box;}
 
-.section {min-height: 100%;}
+.section {height: auto; min-height: 100%;}
 
 a {text-decoration: none;}
 
@@ -218,7 +218,7 @@ header nav ul li:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
-    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.3));
 }
 
 #home a .pfeil:hover {
@@ -237,7 +237,7 @@ header nav ul li:hover {
 
 #about h4 {
     margin: 0;
-}
+}   
 
 #about p {
     margin: 0;
@@ -286,10 +286,10 @@ header nav ul li:hover {
 .about-logos {
     width: 6%;
     padding: 0 2% 0 0;
-    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.3));
 }
 
-.tools:last-child {
+.about-logos:last-child {
     padding: 0;
 }
 
@@ -299,10 +299,14 @@ header nav ul li:hover {
 
 /*  PROJECTS     *********************************************/
 
+
 #projects {
     background-color: #f0f0f0;
-    min-height: 350%;
     margin: 0 auto 0 auto;
+}
+
+#projects h4 {
+    padding: 2% 0 0 0;
 }
 
 #favorite {
@@ -317,23 +321,17 @@ header nav ul li:hover {
 }
 
 #gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
     width: 70%;
     margin: 0 auto 0 auto;
-    padding: 5% 0 0 0;
+    padding: 0 0 5% 0;
 }
 
-#gallery ul {
-    padding: 0;
-}
-
-#gallery ul li {
-    width: 25%;
-    float: left;
-    margin-bottom: 15px;
-}
 
 #gallery img {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
@@ -379,7 +377,7 @@ header nav ul li:hover {
 
 #contact-logos img {
     max-width: 40%;
-    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.3));
 }
 
 #contact-logos img:hover {
@@ -576,22 +574,16 @@ footer a:hover {
         text-align: center;
     }
 
-
-
-    #projects {
-        min-height: 180%;
+    #gallery {
+        grid-template-columns: auto auto auto;
+        gap: 20px;  
     }
-    
-    #gallery ul li {
-        width: 33.33%;
-    }
-    
+
 
 
     #contact-container {
         width: 70%;
     }
-
 
 
 
@@ -621,6 +613,7 @@ footer a:hover {
         text-align: left;
     }
 }
+
 
 
 
@@ -720,21 +713,21 @@ footer a:hover {
 
 
 
-    #projects {
-        min-height: 260%;
-    }
 
     #favorite {
         width: 70%;
     }
 
     #gallery {
-        width: 70%;
+        grid-template-columns: auto auto;
+        gap: 10px;
     }
 
-    #gallery ul li {
-        width: 50%;
+    .about-logos {
+        width: 10%;
     }
+
+
 
 
 
