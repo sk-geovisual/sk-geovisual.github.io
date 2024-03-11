@@ -6,9 +6,6 @@
         <rect id="ArtBoard11" serif:id="ArtBoard1" x="0" y="0" width="1181.1" height="1181.1"/>
     </clipPath>
     <g clip-path="url(#_clip1)">
-        <g transform="matrix(1,0,0,1,-3.81493,-4.55885)">
-            <rect x="-43.49" y="-30.519" width="1275.71" height="1251.26"/>
-        </g>
         <use xlink:href="#_Image2" x="23" y="18" width="1135px" height="1140px"/>
     </g>
     <defs>
