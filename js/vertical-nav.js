@@ -5,7 +5,7 @@ function activateNavigation() {
       return `
                       <div class="nav-item" data-for-section="${section.id}">
                           <a href="#${section.id}" class="nav-link"></a>
-                          <span class="nav-label">${section.dataset.label}</span>
+                          <!-- <span class="nav-label">${section.dataset.label}</span> -->
                       </div>
                   `;
     });
