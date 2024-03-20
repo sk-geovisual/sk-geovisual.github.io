@@ -162,13 +162,13 @@ header nav ul li:hover {
     opacity: 0.5;
 }
 
-.nav-label {
+/* .nav-label {
     color:#494949;
     font-size: 15px;
     font-weight: regular;
     opacity: 0;
     transition: opacity 0.1s;
-}
+} */
 
 .nav-link {
     background: rgba(0, 0, 0, 0.3);
@@ -177,12 +177,12 @@ header nav ul li:hover {
     margin-left: 10px;
     transition: transform 0.2s;
     width: var(--nav-gap);
-    transform: scale(0.7);
+    transform: scale(0.9);
 }
 
 .nav-link-selected {
     background: #494949;
-    transform: scale(1);
+    transform: scale(0.8);
 }
 
 
@@ -359,10 +359,10 @@ header nav ul li:hover {
 }
 
 #gallery img:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -628,7 +628,6 @@ footer a:hover {
     #gallery img {
         height: 200px;
     }
-
 
 
     #contact-container {
