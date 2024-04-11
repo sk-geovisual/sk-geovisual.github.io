@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>sk.geovisual | my portfolio</title>
-    <link rel="icon" href="img/sk.geovisual.svg" type="image/svg">    
+    <title>sk-geovisual | my portfolio</title>
+    <link rel="icon" href="img/sk-geovisual.svg" type="image/svg">
     <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-mobileFirst.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -19,51 +19,78 @@
     <!--    HEADER  ------------------------------------------------>
 
     <header>
-        <div id="logos">
-            <ul>
-                <li><a href="index.html#home"><img src="img/sk.geovisual.svg" alt="Logo"></a></li>
-                <li><a href="https://www.linkedin.com/in/simon-kraus-b476b1239/" target="_blank"><img src="img/Logos_Marken/linkedin.svg" alt="LinkedIn" class="linkedin"></a></li>
-                <li><a href="https://github.com/nomisuark" target="_blank"><img src="img/Logos_Marken/github.svg" alt="GitHub" class="github"></a></li>
-                <li><a href="https://www.instagram.com/sk.geovisual/" target="_blank"><img src="img/Logos_Marken/instagram.svg" alt="Instagram" class="instagram"></a></li>        
-            </ul>
-        </div>
+        <div id="header-container">
+            <div id="header-link">
+                <div class="header-logo"><a href="index.html"><img src="img/sk-geovisual.svg" alt="sk-geovisual_Logo"></a></div>
+                <div class="header-logo"><a href="https://www.linkedin.com/in/simon-kraus-b476b1239/" target="_blank"><img src="img/Logos_Marken/linkedin.svg" alt="LinkedIn" class="linkedin"></a></div>
+                <div class="header-logo"><a href="https://github.com/sk-geovisual" target="_blank"><img src="img/Logos_Marken/github.svg" alt="GitHub" class="github"></a></div>
+                <div class="header-logo"><a href="https://www.instagram.com/sk.geovisual/" target="_blank"><img src="img/Logos_Marken/instagram.svg" alt="Instagram" class="instagram"></a></div>
+            </div>
 
-        <nav id="main-nav">
-            <img src="img/ellipsis.svg" alt="Menü" class="Menü">
-            <ul>
-                <a href="index.html#home"><li>HOME</li></a>
-                <a href="index.html#about"><li>ABOUT</li></a>
-                <a href="index.html#projects"><li>PROJECTS</li></a>
-                <a href="index.html#contact"><li>CONTACT</li></a>
-            </ul>
-        </nav>
+            <button class="mobile-nav-toggle" aria-controls="main-nav" aria-expanded="false"><span class="sr-only">Menu</span>
+                <svg class="hamburger" view="0 0 0 0">
+                    <!-- Linie von oben rechts nach unten links unsichtbar machen -->
+                    <path class="line-cross"
+                        d="M 51 11 l -40 0 l 20 20 l -20 20">
+                    </path>
+                    <!-- Linie von unten links nach oben rechts unsichtbar machen -->
+                    <path class="line-cross"
+                        d="M 11 51 l 40 0 l -20 -20 l 20 -20">
+                    </path>
+                    <!-- Linie Mitte von links zur mitte unsichtbar machen -->
+                    <path class="line-middle"
+                        d="M 11 31 l 12 0">
+                    </path>
+                    <!-- Linie Mitte von rechts zur mitte unsichtbar machen -->
+                    <path class="line-middle"
+                        d="M 51 31 l -12 0">
+                    </path>
+                </svg>
+            </button>
+
+            <nav>
+                <!-- <img src="img/ellipsis.svg" alt="Menü" class="Menü"> -->
+                <ul class="main-nav" data-visible="false" id="main-nav">
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#projects">PROJECTS</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class='section' id="legal" data-label="Legal Disclosure">
-        <h3>Impressum</h3>
+        <div class="content">
+            <h2>Impressum</h2>
 
-        <p>Simon Kraus<br />
-        Brackenstra&szlig;e 21<br />
-        97450 Arnstein</p>
-        
-        <h4>Kontakt</h4>
-        <p>Telefon: 0171 1170004<br />
-        Telefax: ---<br />
-        E-Mail: simonkraus.geovisual@magenta.de</p>
-        
-        <h4>Redaktionell verantwortlich</h4>
-        <p>Simon Kraus<br />
-        Brackenstra&szlig;e 21<br />
-        97450 Arnstein</p>
-        
-        <p>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de</a></p>
+            <p>Simon Kraus<br />
+            Brackenstra&szlig;e 21<br />
+            97450 Arnstein</p>
+            
+            <h4>Kontakt</h4>
+            <p>Telefon: 0171 1170004<br />
+            Telefax: ---<br />
+            E-Mail: sk-geovisual@magenta.de</p>
+            
+            <h4>Redaktionell verantwortlich</h4>
+            <p>Simon Kraus<br />
+            Brackenstra&szlig;e 21<br />
+            97450 Arnstein</p>
+            
+            <p>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de</a></p>
+        </div>
     </div>
     
     <!--    FOOTER  ------------------------------------------------>
 
     <footer>
-        <p>&copy; 2023 sk.geovisual | <a href="privacy.html">Privacy Policy</a> | <a href="legal.html">Legal</a></p>
+        <p>&copy; 2023 sk-geovisual | <a href="privacy.html">Privacy Policy</a> | <a href="legal.html">Legal</a></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/vertical-nav.js"></script>
+    <script src="js/hamburger-menu.js"></script>
 
 </body>
 
