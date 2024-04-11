@@ -248,7 +248,8 @@ header nav ul li:hover {
     padding: 2% 0 4% 0;
 }
 
-#about a:hover {opacity: 0.7;
+#about a:hover {
+    opacity: 0.7;
     transition: all 300ms;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
@@ -620,6 +621,9 @@ footer a:hover {
         text-align: center;
     }
 
+
+
+
     #gallery {
         grid-template-columns: auto auto auto;
         gap: 20px;  
@@ -630,6 +634,7 @@ footer a:hover {
     }
 
 
+    
     #contact-container {
         width: 70%;
     }
