@@ -3,14 +3,14 @@
 :root {
     --header-height: 5rem;
     --footer-height: 5rem;
-    --fs-xl: clamp(2.5rem, 7vw, 15rem);
-    --fs-l: clamp(1.25rem, 5vw, 10rem);
-    --fs-m: clamp(1rem, 3.5vw, 8rem);
-    --fs-s: clamp(0.75rem, 2.5vw, 5rem);
+    --fs-xl: clamp(2.5rem, 5vw, 5rem);
+    --fs-l: clamp(1.25rem, 4vw, 4rem);
+    --fs-m: clamp(1rem, 3vw, 3rem);
+    --fs-s: clamp(0.75rem, 2vw, 2rem);
     --filter-shadow: drop-shadow(0rem clamp(0.3rem, 0.5vw, 1.5rem) clamp(0.1rem, 0.5vw, 0.5rem) rgba(0, 0, 0, 0.3));
     --filter-shadow-reverse: drop-shadow(0rem calc(clamp(0.3rem, 0.5vw, 1.5rem) * -1) clamp(0.1rem, 0.5vw, 0.5rem) rgba(0, 0, 0, 0.3));
     --text-shadow: 0 clamp(0.3rem, 0.5vw, 1.5rem) clamp(0.1rem, 1vw, 2rem) rgba(0, 0, 0, 0.3);
-    --border-radius: clamp(5px, 2vw, 60px);
+    --border-radius: clamp(5px, 0.5vw, 60px);
 }
 
 
@@ -28,10 +28,10 @@ p, .section a {font-family: 'Roboto Slab', serif; color: #494949;}
 h1 {font-size: var(--fs-xl); line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
 h2 {font-size: var(--fs-l); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; color: #007878;}
 h3 {font-size: var(--fs-m); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding: 0; margin: 0;}
-h4 {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding: clamp(2rem, 2vh, 10rem) 0 clamp(1rem, 0.5vh, 4rem) 0; text-align: left;}
+h4 {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding: clamp(1rem, 2vh, 6rem) 0 clamp(0.5rem, 0.5vw, 2rem) 0; text-align: left;}
 p {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; margin: 0; text-align: justify;}
 a {text-decoration: none; font-size: var(--fs-s);}
-hr {width: clamp(3rem, 3vw, 20rem); height: clamp(0.1rem, 0.2vh, 0.7rem); background: #494949; border: 0; border-radius: 100vmax; margin: clamp(0.3rem, 1vh, 2rem) auto clamp(2.5rem, 3vh, 8rem) auto;}
+hr {width: clamp(3rem, 3vw, 20rem); height: clamp(0.1rem, 0.2vh, 0.7rem); background: #494949; border: 0; border-radius: 100vmax; margin: clamp(0.3rem, 1vh, 2rem) auto clamp(2rem, 4vh, 15rem) auto;}
 
 #about, #logos, li, img, .Menü, span {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms; transform: all 300ms; -webkit-transform: all 300ms; -moz-transform: all 300ms; -o-transform: all 300ms;}
 .Menü {display: none;}
@@ -65,7 +65,7 @@ hr {width: clamp(3rem, 3vw, 20rem); height: clamp(0.1rem, 0.2vh, 0.7rem); backgr
     text-align: justify;
     min-width: 30%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     color: white;
     transform: translate(-50%,-50%);
@@ -74,14 +74,14 @@ hr {width: clamp(3rem, 3vw, 20rem); height: clamp(0.1rem, 0.2vh, 0.7rem); backgr
 
 #overlay-button {
     font-family: 'Roboto';
-    font-size: clamp(0.25rem, 3vw, 4rem);
+    font-size: var(--fs-s);
     background-color: white;
     border: solid #ffffff;
     border-radius: 100vmax;
     color: #494949;
-    min-width: 10%;
-    min-height: 5vh;
-    margin-top: 60vh;
+    min-width: 15%;
+    min-height: clamp(1rem, 10vw, 7rem);
+    margin-top: 50vh;
 }
 
 #overlay-button:hover {
@@ -188,7 +188,7 @@ header {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
-    text-align: right;
+    text-align: center;
     text-shadow: var(--text-shadow);
 }
 
@@ -201,7 +201,7 @@ header {
 }
 
 .main-nav li a {
-    font-size: var(--fs-s);
+    font-size: var(--fs-m);
 }
 
 .mobile-nav-toggle {
@@ -267,7 +267,7 @@ header {
 /*  VERTICAL NAV     *********************************************/
 
 .vertical-nav {
-    --nav-gap: clamp(1rem, 2vw, 6rem);
+    --nav-gap: clamp(1rem, 1vw, 2rem);
     margin: 0 var(--nav-gap) 0 var(--nav-gap);
     padding: var(--nav-gap) 0 var(--nav-gap) 0;
     position: fixed;
@@ -330,13 +330,14 @@ header {
     margin: 0 auto 0 auto;
 }
 
-#home img {
+.sk-geovisual_Logo {
     margin-top: clamp(2rem, 5vh, 20rem);
-    max-width: clamp(12rem, 30vw, 80rem);
+    max-width: clamp(12rem, 20vw, 20rem);
 }
 
-#home a .pfeil {
-    max-width: clamp(2rem, 10vw, 18rem);
+.pfeil {
+    margin-top: clamp(2rem, 3vh, 20rem);
+    max-width: clamp(3rem, 6vw, 6rem);
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -344,7 +345,7 @@ header {
     filter: var(--filter-shadow);
 }
 
-#home a .pfeil:hover {
+.pfeil:hover {
     transform: scale(0.9);
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -364,7 +365,7 @@ header {
 
 #about p {
     margin: 0;
-    padding: 0 0 0 0;
+    padding: 0;
     text-align: justify;
 }
 
@@ -395,6 +396,9 @@ header {
 }
 
 .content-logos img {
+    border: solid clamp(0.1rem, 0.2vw, 0.2rem) #494949;
+    border-radius: var(--border-radius);
+    padding: clamp(0.2rem, 0.1vw, 0.3rem);
     width: clamp(1.5rem, 2vw, 20rem);
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -429,7 +433,7 @@ header {
 }
 
 #favorite h4 {
-    padding: 0 0 clamp(1rem, 0.5vh, 4rem) 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -645,6 +649,12 @@ header {
     min-height: 90%;
 }
 
+#contact h4 {
+    padding-bottom: 0;
+}
+
+
+
 #contact-logos {
     /* border: solid red; */
     display: flex;
@@ -661,14 +671,17 @@ header {
     padding: 0 0 clamp(1rem, 2vh, 5rem) 0;
 }
 
-#contact-container img{
-    margin-top: clamp(2rem, 2vh, 10rem);
-    max-width: clamp(12rem, 30vw, 80rem);
+#contact-logos .content-logos img {
+    border: none;
+    border-radius: none;
+}
+
+#contact-container .sk-geovisual_Logo {
+    margin-top: clamp(2rem, 3vh, 10rem);
 }
 
 #contact-container .pfeil {
-    margin-top: clamp(2rem, 5vh, 20rem);
-    max-width: clamp(2rem, 10vw, 18rem);
+    margin-top: clamp(2rem, 12vh, 50rem);
     transform: rotate(180deg) scale(1);
     -webkit-transform: rotate(180deg) scale(1);
     -moz-transform: rotate(180deg) scale(1);
@@ -677,7 +690,6 @@ header {
 }
 
 #contact-container .pfeil:hover {
-    max-width: clamp(2rem, 10vw, 18rem);
     transform: rotate(180deg) scale(0.9);
     -webkit-transform: rotate(180deg) scale(0.9);
     -moz-transform: rotate(180deg) scale(0.9);
@@ -803,10 +815,13 @@ footer a:hover {
 @media (min-width: 550px) {
 
     :root {
-        --header-height: clamp(5rem, 15vw, 25rem);
-        --footer-height: clamp(5rem, 15vw, 25rem);
+        --header-height: clamp(5rem, 8vw, 7rem);
+        --footer-height: clamp(5rem, 8vw, 7rem);
     }
 
+    .content {
+        width: 70%;
+    }
 
     .mobile-nav-toggle {
         display: none;
@@ -832,7 +847,6 @@ footer a:hover {
         align-items: center;
         max-width: 50%;
         height: var(--header-height);
-        /* inset: 0 0 0 0; */
         margin: 0 0 0 auto;
         padding: 0;
         background-color: #fff;
@@ -842,6 +856,10 @@ footer a:hover {
 
     .main-nav li {
         margin: 0 clamp(1rem, 4vw, 20rem) 0 0;
+    }
+
+    .main-nav li a {
+        font-size: var(--fs-s);
     }
 
 
@@ -887,7 +905,7 @@ footer a:hover {
     }
 
     #favorite h4 {
-        padding: clamp(2rem, 12vh, 20rem) 0 clamp(1rem, 2vh, 10rem) 0;
+        padding: clamp(2rem, 4vh, 20rem) 0 clamp(1rem, 2vh, 10rem) 0;
     }
 
 }
