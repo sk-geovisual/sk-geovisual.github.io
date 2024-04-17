@@ -12,14 +12,14 @@
     --text-shadow: 0 clamp(0.3rem, 0.5vw, 1.5rem) clamp(0.1rem, 1vw, 2rem) rgba(0, 0, 0, 0.3);
     --border-radius: clamp(5px, 0.5vw, 60px);
 
-    color-scheme: ;
+    color-scheme: light dark;
 }
 
 
 html, body {scroll-behavior: smooth; overflow-x: hidden; margin: 0; padding: 0; height: 100%; text-align: center; hyphens: auto;}
 *{box-sizing: border-box;}
 
-.section {height: auto; min-height: 100%;}
+.section {height: auto; min-height: 100%; background: #fff;}
 .content {width: 80%; margin: 0 auto 0 auto; padding: clamp(2rem, 10vh, 60rem) 0 clamp(2rem, 10vh, 60rem) 0; float: inherit;}
 
 
