@@ -19,7 +19,7 @@
 html, body {scroll-behavior: smooth; overflow-x: hidden; margin: 0; padding: 0; height: 100%; text-align: center; hyphens: auto;}
 *{box-sizing: border-box;}
 
-.section {height: auto; height: 100dvh;}
+.section {height: auto; min-height: 100%; background: #fff;}
 .content {width: 80%; margin: 0 auto 0 auto; padding: clamp(2rem, 10vh, 60rem) 0 clamp(2rem, 10vh, 60rem) 0; float: inherit;}
 
 
@@ -909,7 +909,6 @@ footer a:hover {
     }
 
 }
-<<<<<<< HEAD
 
 
 
@@ -994,5 +993,3 @@ footer a:hover {
         box-shadow: 0rem calc(clamp(0.1rem, 0.3vh, 2rem) * -1) clamp(0.1rem, 0.3vh, 2rem) rgba(255, 255, 255, 0.3);
     }
   }
-=======
->>>>>>> 56a8efd311d4ccee16cdfd0d528924491af26a3a
