@@ -19,7 +19,7 @@
 html, body {scroll-behavior: smooth; overflow-x: hidden; margin: 0; padding: 0; height: 100%; text-align: center; hyphens: auto;}
 *{box-sizing: border-box;}
 
-.section {height: auto; height: 100dvh;}
+.section {height: auto; min-height: 100%;}
 .content {width: 80%; margin: 0 auto 0 auto; padding: clamp(2rem, 10vh, 60rem) 0 clamp(2rem, 10vh, 60rem) 0; float: inherit;}
 
 
