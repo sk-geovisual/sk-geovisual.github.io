@@ -507,6 +507,8 @@ header {
     /* height: clamp(15rem, 20vh, 100rem); */
     border-radius: var(--border-radius);
     object-fit: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 #gallery img:hover {
@@ -516,6 +518,7 @@ header {
     -o-transform: scale(1.05);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    filter: none;
 }
 
 
