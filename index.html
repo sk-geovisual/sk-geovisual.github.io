@@ -99,7 +99,7 @@
         <!-- <hr> -->
         <div class="content" id="home-container">
             <h1>sk-geovisual</h1>
-            <h2>Visualizing geodata with dedication</h2>
+            <h2 href="" class="typewrite" data-period="2000" data-type='[ "cartography", "3d-modeling", "graphic design", "web design" ]'><span class="wrap"></span></h2>
             <img class="sk-geovisual_Logo" src="img/sk-geovisual.svg" alt="sk-geovisual_Logo"><br>
             <a href="#about"><img src="img/pfeil.svg" alt="Pfeil" class="pfeil"></a>
         </div>
@@ -118,16 +118,23 @@
                 
                 <div id="about-container-item2">
                     <h4>Simon Kraus</h4>
-                    <p>Hello there! My name is Simon and I am completely into cool designs and visualizations. Mixing them up with geodata into maps or 3D-models is what I'm curious about. Recently I successfully finished my bachelor thesis (topic: VR eye tracking - possibilities of data acquisition and interaction in 3D geovisualizations) in Geovisualization at the <a href="https://geo.thws.de/studium/bachelor-geovisualisierung/"> Technical University Würzburg/Schweinfurt - THWS - </a>based in Würzburg, Southern Germany. I additionally developed a VR scene for this in Unreal Engine. <br><br>In the following you can see some of my projects I created during my studies and spare time. This portfolio website is also a small project of mine to further learn the programming languages html, css and java script.</p>
+                    <p>Hello there!
+                        My name is Simon and I am completely into cool designs and visualizations. Mixing them up with geodata into maps or 3D-models is what I'm curious about.
+                        Recently I successfully completed my bachelor's degree in Geovisualization at the <a href="https://geo.thws.de/studium/bachelor-geovisualisierung/"> Technical University Würzburg/Schweinfurt - THWS - </a>based in Würzburg, Southern Germany.
+                        In my bachelor thesis I developed a VR scene in Unreal Engine referring to the topic "VR eye tracking - possibilities of data acquisition and interaction in 3D geovisualizations."
+                        <br>
+                        <br>In the following you can see some of my projects I created during my studies and spare time. This portfolio website is also a project of mine to further learn the programming languages html, css and java script.
+                    </p>
                     
                     <h4>Design- and Visualization-Tools</h4>
                     <div class="about-container-item2-logos">
+                        <div class="content-logos"><a href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview" target="_blank"><img src="img/Logos_Marken/logo_ArcGIS-Pro.svg" alt="ArcGIS-Pro" title="ArcGIS Pro"></a></div>
+                        <div class="content-logos"><a href="https://www.qgis.org/de/site/" target="_blank"><img src="img/Logos_Marken/logo_QGIS.svg" alt="QGIS" title="Quantum GIS"></a></div>
+                        <div class="content-logos"><a href="https://www.unrealengine.com/de" target="_blank"><img src="img/Logos_Marken/logo_UnrealEngine.svg" alt="Unreal Engine" title="Unreal Engine"></a></div>
+                        <div class="content-logos"><a href="https://www.blender.org/" target="_blank"><img src="img/Logos_Marken/logo_Blender.svg" alt="Blender" title="Blender"></a></div>
                         <div class="content-logos"><a href="https://affinity.serif.com/de/photo/" target="_blank"><img src="img/Logos_Marken/logo_Affinity-Photo.svg" alt="Affinity-Photo" title="Affinity Photo"></a></div>
                         <div class="content-logos"><a href="https://affinity.serif.com/de/designer/" target="_blank"><img src="img/Logos_Marken/logo_Affinity-Designer.svg" alt="Affinity-Designer" title="Affinity Designer"></a></div>
                         <div class="content-logos"><a href="https://affinity.serif.com/de/publisher/" target="_blank"><img src="img/Logos_Marken/logo_Affinity-Publisher.svg" alt="Affinity-Publisher" title="Affinity Publisher"></a></div>     
-                        <div class="content-logos"><a href="https://www.qgis.org/de/site/" target="_blank"><img src="img/Logos_Marken/logo_QGIS.svg" alt="QGIS" title="Quantum GIS"></a></div>
-                        <div class="content-logos"><a href="https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview" target="_blank"><img src="img/Logos_Marken/logo_ArcGIS-Pro.svg" alt="ArcGIS-Pro" title="ArcGIS Pro"></a></div>
-                        <div class="content-logos"><a href="https://www.blender.org/" target="_blank"><img src="img/Logos_Marken/logo_Blender.svg" alt="Blender" title="Blender"></a></div>
                         <div class="content-logos"><a href="https://www.blackmagicdesign.com/de/products/davinciresolve" target="_blank"><img src="img/Logos_Marken/logo_Resolve.svg" alt="DaVinci-Resolve" title="DaVinci Resolve"></a></div>
                     </div>
                     
@@ -152,300 +159,61 @@
             
             <div id="favorite">
                 <h4>What I am most proud of:</h4>
-                <video src="videos/Animationsfilm_Quartier-IV-und-V_medium.mp4" controls muted poster="videos/Hauptteil0333.jpg" alt="Animationfilm of a real estate property in Würzburg Hubland">This browser does not support html5 videos.</video>
+                <video loading="lazy" src="videos/Animationsfilm_Quartier-IV-und-V_medium.mp4" controls muted poster="videos/Hauptteil0333.jpg" alt="Animationfilm of a real estate property in Würzburg Hubland">This browser does not support html5 videos.</video>
             </div>
             
             <h4>Collection of my previous projects:</h4>
-            <div id="gallery">
+            <div id="gallery"></div>
 
-                <div class="gallery-item">
-                    <img src="img/projects/Plakat_Quartier_IV_V.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Poster of a real estate property in Würzburg Hubland">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Residenzplatz/Plakat_Residenzplatz.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Visualization of the Residenzplatz in Würzburg">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/strassenlaterne.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Rendering of a 3D-model of a street lamp">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Plakat_Semester3.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Poster of my semesterwork">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/MIZ-359/Plakat_MIZ359.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Visualization of a information centre about the river Main in Knetzgau">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Europawahl.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Map of European parliament elections">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/LandkreiseBayern.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Map of the bavarian population development">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Plastikkarte-2010.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Map of global plastic waste 2010">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Plastikkarte-2019.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Map of global plastic waste 2019">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Suedamerika.png" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="Topographic map of Latin America">
-                </div>
+            <!-- Modal/Lightbox -->
+            <!-- <div id="myModal" class="modal">
+                <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
                 
-                <div class="gallery-item">
-                    <img src="img/projects/RockyMountainNationalPark_rendering_low.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" alt="Pseudo 3D map of the Rocky Mountain National Park">
-                </div>
+                    <div id="modal-content">
+                        <img id="modal-img" src="" alt="">
+                    </div>
+            </div> -->
 
-                <div class="gallery-item">
-                    <img src="img/projects/BrightAngel_gruen_rendering_low.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow" alt="Pseudo 3D map of Bright Angel">
+            <div id="myModal" class="modal">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                <div class="modal-content">
+                    <div class="relative">
+                        <img class="modal-main" id="modal-img" src="" alt="">
+                        <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
+                        <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
+                    </div>
                 </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/WY_GrandTeton_rendering_low.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="Pseudo 3D map of the Grand Teton National Park">
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="img/projects/AZ_AgathlaPeak_rendering_low.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="Pseudo 3D map of Agathla Peak">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/WA_MtRainier_rendering_low.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow" alt="Pseudo 3D map of the Mount Rainier">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/UT_TheGoosenecks_rendering-low.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow" alt="Pseudo 3D map of the Goosenecks">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/N36W112_SimonKraus.png" onclick="openModal();currentSlide(17)" class="hover-shadow" alt="Random designed Tile N36W112 in North America">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="img/projects/Sichtbarkeitsanalyse-Antennenmast.png" onclick="openModal();currentSlide(18)" class="hover-shadow" alt="Visibility analysis of an antenna mast">
-                </div>
-
             </div>
 
-            <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
-                
-                <div class="modal-content">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
-                    
-                    <div class="modal-item">
-                        <div class="numbertext">1 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Plakat_Quartier_IV_V.jpg" alt="Poster of a real estate property in Würzburg Hubland">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
 
-                    <div class="modal-item">
-                        <div class="numbertext">2 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Residenzplatz/Plakat_Residenzplatz.png" alt="Visualization of the Residenzplatz in Würzburg">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
+
             
                     
-                    <div class="modal-item">
-                        <div class="numbertext">3 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/strassenlaterne.jpg" alt="Rendering of a 3D-model of a street lamp">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-                    
-                    <div class="modal-item">
-                        <div class="numbertext">4 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Plakat_Semester3.png" alt="Poster of my semesterwork">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">5 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/MIZ-359/Plakat_MIZ359.png" alt="Visualization of a information centre about the river Main in Knetzgau">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-                    <div class="modal-item">
-                        <div class="numbertext">6 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Europawahl.jpg" alt="Map of European parliament elections">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">7 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/LandkreiseBayern.png" alt="Map of the bavarian population development">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">8 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Plastikkarte-2010.png" alt="Map of global plastic waste 2010">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">9 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Plastikkarte-2019.png" alt="Map of global plastic waste 2019">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">10 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Suedamerika.png" alt="Topographic map of Latin America">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div> 
-
-                    <div class="modal-item">
-                        <div class="numbertext">11 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/RockyMountainNationalPark_rendering_low.jpg" alt="Pseudo 3D map of the Rocky Mountain National Park">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">12 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/BrightAngel_gruen_rendering_low.jpg" alt="Pseudo 3D map of Bright Angel">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">13 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/WY_GrandTeton_rendering_low.jpg" alt="Pseudo 3D map of the Grand Teton National Park">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">14 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/AZ_AgathlaPeak_rendering_low.jpg" alt="Pseudo 3D map of Agathla Peak">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">15 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/WA_MtRainier_rendering_low.jpg" alt="Pseudo 3D map of the Mount Rainier">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">16 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/UT_TheGoosenecks_rendering-low.jpg" alt="Pseudo 3D map of the Goosenecks">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">17 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/N36W112_SimonKraus.png" alt="Random designed Tile N36W112 in North America">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-
-                    <div class="modal-item">
-                        <div class="numbertext">18 / 18</div>
-                        <div class="relative">
-                            <img class="modal-main" src="img/projects/Sichtbarkeitsanalyse-Antennenmast.png" alt="Visibility analysis of an antenna mast">
-                            <!-- Next/previous controls -->
-                            <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                            <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="modal-slideshow">
-                        Caption text
-                        <div class="caption-container">
-                            <p id="caption"></p>
-                        </div>
-                                            
-                        Thumbnail image controls
-                        <div class="modal-slideshow-item">
-                            <div class="column">
-                                <img class="demo" src="img/projects/Hauptteil0260.jpg" onclick="currentSlide(1)" alt="Ausschnitt aus Animationsfilm">
-                            </div>
-                                            
-                            <div class="column">
-                                <img class="demo" src="img/projects/Plakat_Quartier_IV_V.jpg" onclick="currentSlide(2)" alt="Plakat zu Animationsfilm">
-                            </div>
-                                        
-                            <div class="column">
-                                <img class="demo" src="img/projects/strassenlaterne.jpg" onclick="currentSlide(3)" alt="Rendering einer Straßenlaterne">
-                            </div>
-                                            
-                            <div class="column">
-                                <img class="demo" src="img/projects/Animationsfilm/Karte_DGM25_oG_600dpi_entsaettigt.png" onclick="currentSlide(4)" alt="Lights">
-                            </div>
-                        </div>
-                    </div> -->
-                
+            <!-- <div class="modal-slideshow">
+                    Caption text
+                <div class="caption-container">
+                    <p id="caption"></p>
                 </div>
-            </div>
+                                    
+                <div class="modal-slideshow-item">
+                    <div class="column">
+                        <img class="demo" src="img/projects/Hauptteil0260.jpg" onclick="currentSlide(1)" alt="Ausschnitt aus Animationsfilm">
+                    </div>
+                                    
+                    <div class="column">
+                        <img class="demo" src="img/projects/Plakat_Quartier_IV_V.jpg" onclick="currentSlide(2)" alt="Plakat zu Animationsfilm">
+                    </div>
+                                
+                    <div class="column">
+                        <img class="demo" src="img/projects/strassenlaterne.jpg" onclick="currentSlide(3)" alt="Rendering einer Straßenlaterne">
+                    </div>
+                                    
+                    <div class="column">
+                        <img class="demo" src="img/projects/Animationsfilm/Karte_DGM25_oG_600dpi_entsaettigt.png" onclick="currentSlide(4)" alt="Lights">
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
 
@@ -481,6 +249,8 @@
     <!-- <script src="js/overlay.js"></script> -->
     <script src="js/hamburger-menu.js"></script>
     <script src="js/progress-bar.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/imageGallery.js"></script>
     <script src="js/lightbox.js"></script>
 
 </body>
