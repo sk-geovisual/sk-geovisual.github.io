@@ -567,7 +567,8 @@ header {
   .modal-main {
     /* border-color: pink;
     border-style: solid; */
-    width: clamp(5rem, 70vw, 50rem);
+    max-width: 70%;
+    max-height: 80vh;
   }
   
   /* The Close Button */
@@ -595,7 +596,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 10vw;
     /* position: relative; */
   }
 
@@ -970,18 +970,8 @@ footer a:hover {
         width: 60%;
     }
     
-    #about-container {
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* align-items: center; */
-    }
-    
     #about-container h4:first-child {
         Padding-top: 0;
-    }
-    
-    #portrait {
-        /* border: solid blue; */
     }
     
     #about-container-item2 {
