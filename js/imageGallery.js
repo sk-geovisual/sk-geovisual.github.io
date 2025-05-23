@@ -22,7 +22,7 @@
             { src: 'img/projects/rendering_blue_2_fertig.jpg', alt: 'Rendering of a 3D-model of Nothing Phone (3a)' },
             { src: 'img/projects/rendering_white_2_fertig.jpg', alt: 'Rendering of a 3D-model of Nothing Phone (3a)' },
             { src: 'img/projects/rendering_black_2_fertig.jpg', alt: 'Rendering of a 3D-model of Nothing Phone (3a)' },
-            { src: 'img/projects/neumorphism_ulm.jpg', alt: 'A map of the german city "Ulm" in neumorphism style' },
+            { src: 'img/projects/Neumorphism_Ulm.jpg', alt: 'A map of the german city "Ulm" in neumorphism style' },
             { src: 'img/projects/Topo_Spain_A2.jpg', alt: 'Topographic map of Spain'},
 
             // Add more image objects as needed
