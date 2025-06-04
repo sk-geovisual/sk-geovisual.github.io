@@ -23,7 +23,7 @@
     <meta name="title" content="sk-geovisual"/>
     <meta name="description" content="Visualizing geodata with dedication."/>
 
-    <title>sk-geovisual | my portfolio</title>
+    <title>sk-geovisual | portfolio</title>
     <link rel="icon" href="img/sk-geovisual.svg" type="image/svg">
     
     <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
@@ -99,7 +99,7 @@
         <!-- <hr> -->
         <div class="content" id="home-container">
             <h1>sk-geovisual</h1>
-            <h2 href="" class="typewrite" data-period="2000" data-type='[ "cartography", "3d-modeling", "graphic design", "web-design" ]'><span class="wrap"></span></h2>
+            <h2 href="" class="typewrite" data-period="2000" data-type='[ "geovisualization", "cartography", "3d-modeling", "graphic design", "web-design" ]'><span class="wrap"></span></h2>
             <img class="sk-geovisual_Logo" src="img/sk-geovisual.svg" alt="sk-geovisual_Logo"><br>
             <a href="#about"><img src="img/pfeil.svg" alt="Pfeil" class="pfeil"></a>
         </div>
@@ -165,25 +165,15 @@
             <h4>Collection of my previous projects:</h4>
             <div id="gallery"></div>
 
-            <!-- Modal/Lightbox -->
-            <!-- <div id="myModal" class="modal">
+            <div class="modal" id="myModal">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                <div class="modal-content" class="relative">
+                        <img class="modal-img" id="modal-img" src="" alt="">
+                        <p class="modal-caption" id="modal-caption"></p>
+                        <div class="content-logos" id="modal-logos" src="" alt=""></div>
+                </div>
                 <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
                 <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                
-                    <div id="modal-content">
-                        <img id="modal-img" src="" alt="">
-                    </div>
-            </div> -->
-
-            <div id="myModal" class="modal">
-                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-                <div class="modal-content">
-                    <div class="relative">
-                        <img class="modal-main" id="modal-img" src="" alt="">
-                        <a class="prev" onclick="plusSlides(-1)"><img src="img/pfeil.svg" alt="Previuos"></a>
-                        <a class="next" onclick="plusSlides(1)"><img src="img/pfeil.svg" alt="Next"></a>
-                    </div>
-                </div>
             </div>
 
 
@@ -247,11 +237,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="js/vertical-nav.js"></script>
     <!-- <script src="js/overlay.js"></script> -->
+    <script src="js/scrollActiveNav.js"></script>
     <script src="js/hamburger-menu.js"></script>
     <script src="js/progress-bar.js"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/imageGallery.js"></script>
-    <script src="js/lightbox.js"></script>
 
 </body>
 
