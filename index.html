@@ -99,7 +99,7 @@
         <!-- <hr> -->
         <div class="content" id="home-container">
             <h1>sk-geovisual</h1>
-            <h2 href="" class="typewrite" data-period="2000" data-type='[ "geovisualization", "cartography", "3d-modeling", "graphic design", "web-design" ]'><span class="wrap"></span></h2>
+            <h2 class="typewrite" data-period="2000" data-type='[ "geovisualization", "cartography", "3d-modeling", "graphic design" ]'><span class="wrap"></span></h2>
             <img class="sk-geovisual_Logo" src="img/sk-geovisual.svg" alt="sk-geovisual_Logo"><br>
             <a href="#about"><img src="img/pfeil.svg" alt="Pfeil" class="pfeil"></a>
         </div>
@@ -166,7 +166,14 @@
             <div id="gallery"></div>
 
             <div class="modal" id="myModal">
-                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                <!-- <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span> -->
+                <button class="close" view="0 0 0 0">
+                    <svg width="60" height="60">
+                        <path class="line-cross"
+                            d="m 3 3 l 44 44 M 47 3 l -44 44">
+                        </path>
+                    </svg>
+                </button>
                 <div class="modal-content" class="relative">
                         <img class="modal-img" id="modal-img" src="" alt="">
                         <p class="modal-caption" id="modal-caption"></p>

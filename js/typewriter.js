@@ -23,7 +23,7 @@ var TxtType = function(el, toRotate, period) {
         var that = this;
         var delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) { delta /= 4; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
@@ -51,6 +51,6 @@ var TxtType = function(el, toRotate, period) {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #f0f0f0}";
+        css.innerHTML = ".typewrite > .wrap {font-family: 'Roboto Slab', serif; border-right: 0.08em solid #f0f0f0}";
         document.body.appendChild(css);
     };
