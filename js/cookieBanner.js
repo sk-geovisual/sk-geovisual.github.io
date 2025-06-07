@@ -1,18 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
   const banner = document.getElementById('cookie-banner');
-  if (!localStorage.getItem('cookieConsent')) {
+  const acceptBtn = document.getElementById('cookie-accept');
+  const declineBtn = document.getElementById('cookie-decline');
+  const consent = localStorage.getItem('cookieConsent');
+
+  // Banner nur anzeigen, wenn noch keine Entscheidung getroffen wurde
+  if (!consent) {
     banner.style.display = 'flex';
-  } else if (localStorage.getItem('cookieConsent') === 'accepted') {
-    loadGoogleAnalytics();
+  } else {
+    banner.style.display = 'none';
+    if (consent === 'accepted') {
+      loadGoogleAnalytics();
+    }
   }
 
-  document.getElementById('cookie-accept').onclick = function() {
+  acceptBtn.onclick = function() {
     localStorage.setItem('cookieConsent', 'accepted');
     banner.style.display = 'none';
     loadGoogleAnalytics();
   };
 
-  document.getElementById('cookie-decline').onclick = function() {
+  declineBtn.onclick = function() {
     localStorage.setItem('cookieConsent', 'declined');
     banner.style.display = 'none';
     // Optional: Cookies löschen oder Tracking deaktivieren
