@@ -54,10 +54,10 @@ gallery.addEventListener('click', function(event) {
         const imgData = images[currentIndex];
         let linksHTML = '';
         if (imgData.linkedin) {
-            linksHTML += `<a href="${imgData.linkedin}" target="_blank"><img src="img/Logos_Marken/linkedin.svg" alt="LinkedIn" style="height:2rem;margin:0 0.5rem;"></a>`;
+            linksHTML += `<a href="${imgData.linkedin}" target="_blank"><img src="img/Logos_Marken/linkedin.svg" alt="LinkedIn" "></a>`;
         }
         if (imgData.instagram) {
-            linksHTML += `<a href="${imgData.instagram}" target="_blank"><img src="img/Logos_Marken/instagram.svg" alt="Instagram" style="height:2rem;margin:0 0.5rem;"></a>`;
+            linksHTML += `<a href="${imgData.instagram}" target="_blank"><img src="img/Logos_Marken/instagram.svg" alt="Instagram" "></a>`;
         }
         modalLink.innerHTML = linksHTML;
     }
