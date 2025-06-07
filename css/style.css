@@ -34,14 +34,14 @@ html, body {scroll-behavior: smooth; margin: 0; padding: 0; height: 100%; text-a
 .relative {position: relative;}
 
 li {list-style-type: none;}
-h1, h2, h3, h4, header a, span {font-family: 'Roboto', sans-serif; font-weight: 500; color: var(--color-grey); text-transform: uppercase;}
-p, .section a {font-family: 'Roboto Slab', serif; color: var(--color-grey);}
+h1, h2, h3, h4, header a {font-family: 'Roboto', sans-serif; font-weight: 500; color: var(--color-grey); text-transform: uppercase;}
+p, .section a, span {font-family: 'Roboto Slab', serif; color: var(--color-grey);}
 .section a, .cookie-banner a {color: var(--color-accent);}
 h1 {font-size: var(--fs-xl); line-height: 150%; letter-spacing: 1px; word-spacing: 1px;}
 h2, .wrap {font-size: var(--fs-l); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; color: var(--color-accent);}
 h3 {font-size: var(--fs-m); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding: 0; margin: 0;}
 h4 {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; padding: clamp(1rem, 2vh, 6rem) 0 clamp(0.5rem, 0.5vw, 2rem) 0; text-align: left;}
-p {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; margin: 0; text-align: justify;}
+p, span {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-spacing: 1px; margin: 0; text-align: justify;}
 a {text-decoration: none; font-size: var(--fs-s);}
 hr {width: clamp(3rem, 3vw, 20rem); height: clamp(0.1rem, 0.2vh, 0.7rem); background: #494949; border: 0; border-radius: 100vmax; margin: clamp(0.3rem, 1vh, 2rem) auto clamp(2rem, 4vh, 15rem) auto;}
 
@@ -567,14 +567,44 @@ header {
 }
 
 .modal-caption {
+    width: 100%;
     text-align: center;
-    padding: 1em 0 1em 0;
+    padding: 0.5em 0 0 0;
+    /* border: blue solid 1px; */
+}
+
+#modal-logos {
+    width: 100%;
+    padding: 0;
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
 }
 
 #modal-logos img {
     border: none;
-    margin: 0 0.25em 0 0.25em;
-    scale: 0.8;
+    scale: 0.7;
+    /* border: green solid 1px; */
+}
+
+.modal-logos-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 2em 0;
+    /* border: green solid 1px; */
+}
+
+.modal-logos-row:last-child {
+    margin: 0;
+}
+
+.text-before-logos {
+    margin-right: 0.7em;
+    /* border: red solid 1px; */
 }
 
 /* The Close Button */
@@ -998,7 +1028,7 @@ footer a:hover {
         --text-shadow: 0 clamp(0.3rem, 0.5vw, 1.5rem) clamp(0.1rem, 1vw, 2rem) rgba(255, 255, 255, 0.3);
     }
     
-    h1, h3, h4, p {
+    h1, h3, h4, p, span {
       color: var(--color-bright2);
     }
 
