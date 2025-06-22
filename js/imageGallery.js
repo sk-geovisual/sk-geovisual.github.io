@@ -78,8 +78,7 @@ gallery.addEventListener('click', function(event) {
             logosHTML = `<div class="modal-logos-row">
                 <span class="text-before-logos">Made with:</span>` +
                 tools.map(tool =>
-                    `<img src="${toolLogos[tool]}" alt="${tool}" title="${tool}" class="tool-logos"
-                        onerror="this.outerHTML='<span class=&quot;tool-logo-fallback&quot;>${tool}</span>';">`
+                    `<img src="${toolLogos[tool]}" alt="${tool}" title="${tool}" class="tool-logos">`
                 ).join('') +
                 `</div>`;
         }
@@ -150,8 +149,7 @@ function updateModalContent() {
         logosHTML = `<div class="modal-logos-row">
             <span class="text-before-logos">Made with:</span>` +
             tools.map(tool =>
-                `<img src="${toolLogos[tool]}" alt="${tool}" title="${tool}" class="tool-logos"
-                    onerror="this.outerHTML='<span class=&quot;tool-logo-fallback&quot;>${tool}</span>';">`
+                `<img src="${toolLogos[tool]}" alt="${tool}" title="${tool}" class="tool-logos" onerror="this.style.display='none';">`
             ).join('') +
             `</div>`;
     }
@@ -172,3 +170,40 @@ function updateModalContent() {
 
     document.getElementById('modal-logos').innerHTML = logosHTML + socialHTML;
 }
+
+// Touch/Swipe-Unterstützung für das Modal (Smartphone)
+let touchStartX = 0;
+let touchEndX = 0;
+
+modal.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+    }
+}, { passive: true });
+
+modal.addEventListener('touchmove', function(e) {
+    if (e.touches.length === 1) {
+        touchEndX = e.touches[0].clientX;
+    }
+}, { passive: true });
+
+modal.addEventListener('touchend', function(e) {
+    const minSwipeDistance = 50; // px
+    if (touchStartX && touchEndX) {
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > minSwipeDistance) {
+            if (diff < 0) {
+                // Nach links gewischt → nächstes Bild
+                currentIndex = (currentIndex + 1) % images.length;
+                updateModalContent();
+            } else {
+                // Nach rechts gewischt → vorheriges Bild
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateModalContent();
+            }
+        }
+    }
+    // Reset für den nächsten Swipe
+    touchStartX = 0;
+    touchEndX = 0;
+}, { passive: true });
