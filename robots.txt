@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sk-geovisual.github.io/sitemap.xml
