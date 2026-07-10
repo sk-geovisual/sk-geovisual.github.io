@@ -45,12 +45,78 @@ p, span {font-size: var(--fs-s); line-height: 150%; letter-spacing: 1px; word-sp
 a {text-decoration: none; font-size: var(--fs-s);}
 hr {width: clamp(3rem, 3vw, 20rem); height: clamp(0.1rem, 0.2vh, 0.7rem); background: #494949; border: 0; border-radius: 100vmax; margin: clamp(0.3rem, 1vh, 2rem) auto clamp(2rem, 4vh, 15rem) auto;}
 
-#about, #logos, li, img, .Menü, span {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms; transform: all 300ms; -webkit-transform: all 300ms; -moz-transform: all 300ms; -o-transform: all 300ms;}
+#about, #logos, li, img, .Menü, span, .button_oval, .button_oval_inverse {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms; transform: all 300ms; -webkit-transform: all 300ms; -moz-transform: all 300ms; -o-transform: all 300ms;}
 .Menü {display: none;}
+
+
+.button_oval a, .button_oval_inverse a {
+    color: var(--color-bright);
+    text-decoration: none;
+}
+
+.button_oval {
+    margin-left: 1em;
+    padding: 0.5em 1.2em;
+    border: none;
+    border-radius: 2em;
+    background: var(--color-accent);
+    color: #fff;
+    filter: var(--filter-shadow);
+    cursor: pointer;
+    font-size: var(--fs-s);
+}
+
+.button_oval:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    filter: none;
+    cursor: pointer;
+}
+
+.button_oval_inverse {
+    margin-left: 1em;
+    padding: 0.5em 1.2em;
+    border: none;
+    border-radius: 2em;
+    background: var(--color-background-dark);
+    color: #fff;
+    filter: var(--filter-shadow);
+    cursor: pointer;
+    font-size: var(--fs-s);
+}
+
+.button_oval_inverse:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    filter: none;
+    cursor: pointer;
+}
+
 
 .text-align-left {text-align: left;}
 
 
+/***** COOKIES      ********************************************/
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--footer-height);
+    background: var(--color-background-bright);
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99999;
+    font-size: var(--fs-s);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
 
 
 
@@ -498,6 +564,21 @@ header {
     width: 100%;
 }
 
+#storymap {
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: clamp(50rem, 20vh, 100rem);
+}
+
+#button_margin_bottom {
+    margin: 3em 0 3em 0;
+}
+
+iframe {
+  border: 1px solid black;
+  width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}
+
 #gallery {
     display: grid;
     grid-template-columns: auto auto;
@@ -767,38 +848,7 @@ body.modal-open {
 
 
 
-/* COOKIES      ********************************************/
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: var(--footer-height);
-    background: var(--color-background-bright);
-    color: #fff;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 99999;
-    font-size: var(--fs-s);
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
-}
 
-.cookie-banner button {
-    margin-left: 1em;
-    padding: 0.5em 1.2em;
-    border: none;
-    border-radius: 2em;
-    background: var(--color-accent);
-    color: #fff;
-    cursor: pointer;
-    font-size: var(--fs-s);
-}
-
-.cookie-banner button#cookie-decline {
-    background: var(--color-background-dark);
-}
 
 
 
@@ -1004,7 +1054,7 @@ footer a:hover {
         padding: clamp(2rem, 12vh, 40rem) 0 clamp(1rem, 2vh, 10rem) 0;
     }
 
-    #favorite h4 {
+    #storymap_box h4 {
         padding: clamp(2rem, 4vh, 20rem) 0 clamp(1rem, 2vh, 10rem) 0;
     }
 
@@ -1118,11 +1168,11 @@ footer a:hover {
         box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.484);
     }
 
-    .cookie-banner button {
+    .button_oval {
         background: var(--color-accent);
     }
 
-    .cookie-banner button#cookie-decline {
+    .button_oval_inverse {
         background: var(--color-background-bright);
     }
 
