@@ -549,7 +549,7 @@ header {
 }
 
 #favorite h4 {
-    padding: 0 0 clamp(0.5rem, 0.5vw, 2rem) 0;
+    padding-bottom: clamp(0.5rem, 0.5vw, 2rem);
     margin: 0;
 }
 
@@ -1061,7 +1061,7 @@ footer a:hover {
     }
 
     #storymap_box h4 {
-        padding: clamp(2rem, 4vh, 20rem) 0 clamp(1rem, 2vh, 10rem) 0;
+        padding: 0 0 clamp(1rem, 2vh, 10rem) 0;
     }
 
     .modal-content {
